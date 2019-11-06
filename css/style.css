@@ -1,0 +1,86 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: Raleway;
+  color: #0d2c40;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 45px;
+  margin: 0;
+}
+
+a {
+  font-family: Raleway;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 20px;
+  border-bottom: 2px solid transparent;
+}
+
+h2 {
+  font-family: Raleway;
+  color: #0d2c40;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header {
+  background-color: #f15b31;
+  color: white;
+  padding: 30px 20px;
+}
+
+nav {
+  background-color: #00a6b3;
+  color: white;
+  padding: 20px 0;
+}
+
+main {
+  width: 850px;
+  margin: 35px auto;
+}
+
+img {
+  margin: 40px 8px;
+}
+
+footer {
+  text-transform: uppercase;
+  padding: 0 20px;
+  background-color: #0d2c40;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  width: 100%;
+}
+
+.copyright .message {
+  font-family: Raleway;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+
+.name {
+  color: #f15b31;
+  font-weight: 700;
+}
+
+a:hover {
+  border: 2px solid white;
+}
