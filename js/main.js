@@ -1,4 +1,4 @@
-var cards = [
+var cardsStart = [
   { rank: "queen", suit: "hearts", cardImage: "images/queen-of-hearts.png" },
   {
     rank: "queen",
@@ -8,6 +8,14 @@ var cards = [
   { rank: "king", suit: "hearts", cardImage: "images/king-of-hearts.png" },
   { rank: "king", suit: "diamonds", cardImage: "images/king-of-diamonds.png" }
 ];
+
+var cards = [];
+
+cardsStart.forEach(e => {
+  const random = Math.floor(Math.random() * 4);
+  cards.push(cardsStart[random]);
+  console.log(random);
+});
 
 var cardsInPlay = [];
 
@@ -33,6 +41,8 @@ function flipCard() {
   }
 }
 
+var cardsInPlay = [];
+
 function createBoard() {
   for (let i = 0; i < cards.length; i++) {
     var cardElement = document.createElement("img");
@@ -42,5 +52,11 @@ function createBoard() {
     document.querySelector("#game-board").appendChild(cardElement);
   }
 }
+
+function resetGame() {
+  location.reload();
+}
+
+document.querySelector("button").addEventListener("click", resetGame);
 
 createBoard();

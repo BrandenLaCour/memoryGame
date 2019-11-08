@@ -62,6 +62,7 @@ footer {
   font-weight: 500;
   width: 100%;
 }
+font-family: Raleway;
 
 .copyright .message {
   font-family: Raleway;
@@ -83,4 +84,18 @@ footer {
 
 a:hover {
   border: 2px solid white;
+}
+
+button:hover {
+  background-color: #f15b31;
+  cursor: pointer;
+  color: white;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  font-family: Raleway;
+  background-color: #00a6b3;
+  color: white;
 }
